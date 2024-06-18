@@ -1,0 +1,665 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .navbar-nav {
+            margin-left: 20px;            
+        }
+
+        #about-us-content {
+            padding-top: 60px;
+
+        }
+
+        .bd-placeholder-img { 
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+            }
+        }
+
+        body {
+            padding-top: 80px;
+        }
+
+        .show-cart li {
+            display: flex;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-img-top {
+            width: 200px;
+            height: 200px;
+            align-self: center;
+        }
+
+    </style>
+
+   
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+    <body>
+    
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Carousel</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#" onclick="showSection('main')">產品介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#" onclick="showSection('about')">關於我們</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cart">Cart (<span class="total-count"></span>)</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+
+
+    <main>
+    
+    <div id="main-content" style="display: block;">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>        </svg>
+                <img src="Gambar\roti.jpg" class="d-block w-100" alt="...">
+                <div class="container">
+                <div class="carousel-caption text-end">
+                    <h1>歐式麵包</h1>
+                    <p>外酥內軟，採用天然發酵工藝，口感獨特。 每一口都能品味到麵粉的香氣與天然的麥香。</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <img src="Gambar\cake.jpg" class="d-block w-100" alt="...">
+                <div class="container">
+                <div class="carousel-caption text-end">
+                    <h1>千層蛋糕</h1>
+                    <p>層層堆疊，薄如紙的蛋皮與香滑的奶油交織而成。 每一口都帶來絲滑的口感與豐富的層次。</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <img src="Gambar\sandwich.jpg" class="d-block w-100" alt="...">
+                <div class="container">
+                <div class="carousel-caption text-end">
+                    <h1>蜜糖吐司</h1>
+                    <p>外脆內軟，烘焙至金黃酥脆，再淋上香甜的蜜糖。 每一口都散發著濃鬱的奶香與蜂蜜的甘甜。</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
+                    <image href="Gambar/honey_icon.jpg" width="140" height="140" />
+                </svg>
+
+                <!-- Bread -->
+                <h2>麵包</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                <p><a class="btn btn-secondary" href="#" onclick="showFeaturettes('bread', event)"> View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
+                    <image href="Gambar/cake_icon.jpg" width="140" height="140" />
+                </svg>
+
+                <!-- Cake -->
+                <h2>蛋糕</h2>
+                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                <p><a class="btn btn-secondary" href="#" onclick="showFeaturettes('cake', event)">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
+                    <image href="Gambar/bread_icon.jpg" width="140" height="140" />            
+                </svg>
+
+                <!-- Honey Sandwich -->
+                <h2>蜜糖土司</h2>
+                <p>And lastly this, the third column of representative placeholder content.</p>
+                <p><a class="btn btn-secondary" href="#" onclick="showFeaturettes('sandwich', event)">View details &raquo;</a></p>
+                
+            </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <!-- Honey Sandwich -->
+
+            <div id="sandwich-features">
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="sandwich1">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">珍珠香草冰淇淋蜜糖吐司<span class="text-muted"></span></h2>
+                    <p class="lead">酥脆的蜜糖吐司搭配香草冰淇淋與Q彈珍珠，冰火交融的口感，帶來絕妙的甜蜜享受。</p>
+                    <p class="card-text">Price: $5</p>
+                    <a href="#" data-name="Honey1" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/honey1.jpg" width="500" height="500" />
+                    </svg>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="sandwich2">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">奶油香蒜吐司 <span class="text-muted"></span></h2>
+                    <p class="lead"> 濃鬱的奶油與香蒜結合，烘焙至金黃酥脆，淋上香甜的蜜糖。 每一口都散發出獨特的香氣和豐富的味道。</p>
+                    <p class="card-text">Price: $6</p>
+                    <a href="#" data-name="Honey2" data-price="6" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/honey2.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="sandwich3">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">藍莓香草冰淇淋蜜糖吐司 <span class="text-muted"></span></h2>
+                    <p class="lead"> 金黃酥脆的蜜糖吐司配上清新的藍莓與香草冰淇淋，果香與奶香完美融合，口感層次豐富。</p>
+                    <p class="card-text">Price: $7</p>
+                    <a href="#" data-name="Honey3" data-price="7" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/honey3.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+            </div>
+
+            <div id="cake-features">
+
+                <!-- Cake Featurette-->
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="cake1">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">玫瑰荔枝千層 <span class="text-muted"></span></h2>
+                    <p class="lead"> 玫瑰的芬芳與荔枝的清甜巧妙融合，蛋皮與奶油層次豐富，口感輕盈，帶來一場浪漫與甜美的味覺盛宴。</p>
+                    <p class="card-text">Price: $10</p>
+                    <a href="#" data-name="Cake1" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/cake1.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="cake2">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">阿薩姆編織千層 <span class="text-muted"></span></h2>
+                    <p class="lead">精選阿薩姆紅茶，層層疊疊的蛋皮與奶油完美交織，帶來醇厚的茶香與絲滑的口感，每一口都是絕妙的味蕾享受。</p>
+                    <p class="card-text">Price: $15</p>
+                    <a href="#" data-name="Cake2" data-price="15" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/cake2.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="cake3">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">小山園抹茶千層 <span class="text-muted"></span></h2>
+                    <p class="lead">採用頂級小山園抹茶，蛋皮與抹茶奶油層層相疊，呈現出濃鬱的茶香與清新的甘甜，口感細膩，回味無窮。</p>
+                    <p class="card-text">Price: $25</p>
+                    <a href="#" data-name="Cake3" data-price="25" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/cake3.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+            </div>
+
+            <!-- Bread Featurette-->
+
+            <div id="bread-features">
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="bread1">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">紅麴蔓越莓歐式麵包 <span class="text-muted"></span></h2>
+                    <p class="lead">红麴和蔓越莓完美结合，带来天然的甜酸风味和健康的营养。外皮酥脆，内里松软，每一口都充满丰富的层次感。</p>
+                    <p class="card-text">Price: $0.5</p>
+                    <a href="#" data-name="Bread1" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/bread1.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="bread2">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">焦糖杏仁歐式麵包 <span class="text-muted"></span></h2>
+                    <p class="lead"> 焦糖的香甜與杏仁的脆香完美融合，打造出濃鬱的風味。 外脆內軟，細膩的口感與豐富的口味，讓人回味無窮。</p>
+                    <p class="card-text">Price: $12</p>
+                    <a href="#" data-name="Bread2" data-price="12" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/bread2.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="bread3">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">全麥葡萄乾歐式麵包 <span class="text-muted"></span></h2>
+                    <p class="lead"> 全麥麵粉與甜美的葡萄乾結合，帶來健康的纖維和天然的甜味。 口感豐富，外皮酥脆，內裡柔軟，是健康與美味的完美平衡。</p>
+                    <p class="card-text">Price: $5</p>
+                    <a href="#" data-name="Bread3" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/bread3.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="about-us-content" style="display: none;">
+
+        <div class="container">
+            <h1>關於我們</h1>
+            <p>歡迎來到我們的甜點店， 我們熱愛烘焙，希望用每一款甜點為你帶來快樂。 這裡有經典的蛋糕、豐富的千層、以及各種獨特的歐式麵包，每一口都充滿了我們的心意。 無論是和朋友分享，還是獨自享用，我們的甜點都能為你增添一份甜蜜的回憶。</p>
+
+        </div>
+    </div>
+
+          <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table"> 
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- /END THE FEATURETTES -->
+
+        <div id="highlighter--hover-tools" style="display: none;">
+            <div id="highlighter--hover-tools--container">
+                <div class="highlighter--icon highlighter--icon-copy" title="Copy"></div>
+                <div class="highlighter--icon highlighter--icon-change-color" title="Change Color"></div>
+                <div class="highlighter--icon highlighter--icon-delete" title="Delete"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    function showSection(section) {
+        console.log('Showing section:', section);
+        
+        if (section === 'main') {
+            console.log('Displaying main content');
+            document.getElementById('main-content').style.display = 'block';
+            document.getElementById('about-us-content').style.display = 'none';
+        } else if (section === 'about') {
+            console.log('Displaying about us content');
+            document.getElementById('main-content').style.display = 'none';
+            document.getElementById('about-us-content').style.display = 'block';
+        }
+    }
+
+
+    function showFeaturettes(section, event) {
+        event.preventDefault();
+        var sections = ['bread', 'cake', 'sandwich'];
+        sections.forEach(function(sec) {
+            document.getElementById(sec + '-features').style.display = (sec === section) ? 'block' : 'none';
+        });
+
+        // Scroll to the selected section
+        document.getElementById(section + '-features').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Show the bread featurettes by default
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('bread-features').style.display = 'block';
+        document.getElementById('cake-features').style.display = 'none';
+        document.getElementById('sandwich-features').style.display = 'none';
+    });
+    </script>
+
+    <script>
+        // ************************************************
+        // Shopping Cart API
+        // ************************************************
+
+        var shoppingCart = (function() {
+        // =============================
+        // Private methods and propeties
+        // =============================
+        var cart = [];
+        
+        // Constructor
+        function Item(name, price, count) {
+            this.name = name;
+            this.price = price;
+            this.count = count;
+        }
+        
+        // Save cart
+        function saveCart() {
+            sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+        }
+        
+            // Load cart
+        function loadCart() {
+            cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+        }
+        if (sessionStorage.getItem("shoppingCart") != null) {
+            loadCart();
+        }
+        
+
+        // =============================
+        // Public methods and propeties
+        // =============================
+        var obj = {}; 
+        
+        // Add to cart
+        obj.addItemToCart = function(name, price, count) {
+            for(var item in cart) {
+            if(cart[item].name === name) {
+                cart[item].count ++;
+                saveCart();
+                return;
+            }
+            }
+            var item = new Item(name, price, count);
+            cart.push(item);
+            saveCart();
+        }
+        // Set count from item
+        obj.setCountForItem = function(name, count) {
+            for(var i in cart) {
+            if (cart[i].name === name) {
+                cart[i].count = count;
+                break;
+            }
+            }
+        };
+        // Remove item from cart
+        obj.removeItemFromCart = function(name) {
+            for(var item in cart) {
+                if(cart[item].name === name) {
+                cart[item].count --;
+                if(cart[item].count === 0) {
+                    cart.splice(item, 1);
+                }
+                break;
+                }
+            }
+            saveCart();
+        }
+
+        // Remove all items from cart
+        obj.removeItemFromCartAll = function(name) {
+            for(var item in cart) {
+            if(cart[item].name === name) {
+                cart.splice(item, 1);
+                break;
+            }
+            }
+            saveCart();
+        }
+
+        // Clear cart
+        obj.clearCart = function() {
+            cart = [];
+            saveCart();
+        }
+
+        // Count cart 
+        obj.totalCount = function() {
+            var totalCount = 0;
+            for(var item in cart) {
+            totalCount += cart[item].count;
+            }
+            return totalCount;
+        }
+
+        // Total cart
+        obj.totalCart = function() {
+            var totalCart = 0;
+            for(var item in cart) {
+            totalCart += cart[item].price * cart[item].count;
+            }
+            return Number(totalCart.toFixed(2));
+        }
+
+        // List cart
+        obj.listCart = function() {
+            var cartCopy = [];
+            for(i in cart) {
+            item = cart[i];
+            itemCopy = {};
+            for(p in item) {
+                itemCopy[p] = item[p];
+
+            }
+            itemCopy.total = Number(item.price * item.count).toFixed(2);
+            cartCopy.push(itemCopy)
+            }
+            return cartCopy;
+        }
+
+        // cart : Array
+        // Item : Object/Class
+        // addItemToCart : Function
+        // removeItemFromCart : Function
+        // removeItemFromCartAll : Function
+        // clearCart : Function
+        // countCart : Function
+        // totalCart : Function
+        // listCart : Function
+        // saveCart : Function
+        // loadCart : Function
+        return obj;
+        })();
+
+
+        // *****************************************
+        // Triggers / Events
+        // ***************************************** 
+        // Add item
+        $('.add-to-cart').click(function(event) {
+        event.preventDefault();
+        var name = $(this).data('name');
+        var price = Number($(this).data('price'));
+        shoppingCart.addItemToCart(name, price, 1);
+        displayCart();
+        });
+
+        // Clear items
+        $('.clear-cart').click(function() {
+        shoppingCart.clearCart();
+        displayCart();
+        });
+
+
+        function displayCart() {
+        var cartArray = shoppingCart.listCart();
+        var output = "";
+        for(var i in cartArray) {
+            output += "<tr>"
+            + "<td>" + cartArray[i].name + "</td>" 
+            + "<td>(" + cartArray[i].price + ")</td>"
+            + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+            + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
+            + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+            + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+            + " = " 
+            + "<td>" + cartArray[i].total + "</td>" 
+            +  "</tr>";
+        }
+        $('.show-cart').html(output);
+        $('.total-cart').html(shoppingCart.totalCart());
+        $('.total-count').html(shoppingCart.totalCount());
+        }
+
+        // Delete item button
+
+        $('.show-cart').on("click", ".delete-item", function(event) {
+        var name = $(this).data('name')
+        shoppingCart.removeItemFromCartAll(name);
+        displayCart();
+        })
+
+
+        // -1
+        $('.show-cart').on("click", ".minus-item", function(event) {
+        var name = $(this).data('name')
+        shoppingCart.removeItemFromCart(name);
+        displayCart();
+        })
+        // +1
+        $('.show-cart').on("click", ".plus-item", function(event) {
+        var name = $(this).data('name')
+        shoppingCart.addItemToCart(name, 0, 1);
+        displayCart();
+        })
+
+        // Item count input
+        $('.show-cart').on("change", ".item-count", function(event) {
+        var name = $(this).data('name');
+        var count = Number($(this).val());
+        shoppingCart.setCountForItem(name, count);
+        displayCart();
+        });
+
+        displayCart();
+
+    </script>
+
+</body>
+</html>

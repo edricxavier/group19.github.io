@@ -57,6 +57,17 @@
             align-self: center;
         }
 
+        .carousel-caption h1, .carousel-caption p {
+            color: #000; /* Dark color */
+            font-weight: bold; /* Bold font */
+            text-shadow: 1px 1px 1px rgb(255, 255, 255); /* Light outline for contrast */
+        }
+
+        .carousel-caption.white-caption h1, .carousel-caption.white-caption p {
+            color: #fff; /* White color */
+            text-shadow: none; /* Remove outline */
+        }
+        
     </style>
 
    
@@ -121,7 +132,7 @@
                         </svg>
                         <img src="Gambar/cake.jpg" class="d-block w-100" alt="...">
                         <div class="container">
-                            <div class="carousel-caption text-end">
+                            <div class="carousel-caption text-end white-caption">
                                 <h1>千層蛋糕</h1>
                                 <p>層層堆疊，薄如紙的蛋皮與香滑的奶油交織而成。 每一口都帶來絲滑的口感與豐富的層次。</p>
                                 <p><a class="btn btn-primary btn-outline-light" href="#" onclick="showFeaturettes('cake', event)"> 詳細 &raquo;</a></p>

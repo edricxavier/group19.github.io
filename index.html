@@ -91,57 +91,79 @@
 
     <main>
     
-    <div id="main-content" style="display: block;">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="main-content" style="display: block;">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="#777"/>
+                        </svg>
+                        <img src="Gambar/roti.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>歐式麵包</h1>
+                                <p>外酥內軟，採用天然發酵工藝，口感獨特。 每一口都能品味到麵粉的香氣與天然的麥香。</p>
+                                <p><a class="btn btn-danger btn-outline-dark" href="#" onclick="showFeaturettes('bread', event)"> 細節 &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="#777"/>
+                        </svg>
+                        <img src="Gambar/cake.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>千層蛋糕</h1>
+                                <p>層層堆疊，薄如紙的蛋皮與香滑的奶油交織而成。 每一口都帶來絲滑的口感與豐富的層次。</p>
+                                <p><a class="btn btn-primary btn-outline-light" href="#" onclick="showFeaturettes('cake', event)"> 細節 &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="#777"/>
+                        </svg>
+                        <img src="Gambar/sandwich.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>蜜糖吐司</h1>
+                                <p>外脆內軟，烘焙至金黃酥脆，再淋上香甜的蜜糖。 每一口都散發著濃鬱的奶香與蜂蜜的甘甜。</p>
+                                <p><a class="btn btn-danger btn-outline-dark" href="#" onclick="showFeaturettes('sandwich', event)"> 細節 &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="#777"/>
+                        </svg>
+                        <img src="Gambar/france1.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>法式甜點</h1>
+                                <p> 法式甜點以其精緻的外觀和細膩的口感聞名。 精選優質食材，手工製作，每種甜點都散發出濃鬱的香氣與獨特的風味，讓人陶醉。</p>
+                                <p><a class="btn btn-primary btn-outline-light" href="#" onclick="showFeaturettes('france', event)"> 細節 &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>        </svg>
-                <img src="Gambar\roti.jpg" class="d-block w-100" alt="...">
-                <div class="container">
-                <div class="carousel-caption text-end">
-                    <h1>歐式麵包</h1>
-                    <p>外酥內軟，採用天然發酵工藝，口感獨特。 每一口都能品味到麵粉的香氣與天然的麥香。</p>
-                    <p><a class="btn btn-danger" href="#" onclick="showFeaturettes('bread', event)"> Details &raquo;</a></p>
-                </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-                <img src="Gambar\cake.jpg" class="d-block w-100" alt="...">
-                <div class="container">
-                <div class="carousel-caption text-end">
-                    <h1>千層蛋糕</h1>
-                    <p>層層堆疊，薄如紙的蛋皮與香滑的奶油交織而成。 每一口都帶來絲滑的口感與豐富的層次。</p>
-                    <p><a class="btn btn-danger" href="#" onclick="showFeaturettes('cake', event)"> Details &raquo;</a></p>
-                </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-                <img src="Gambar\sandwich.jpg" class="d-block w-100" alt="...">
-                <div class="container">
-                <div class="carousel-caption text-end">
-                    <h1>蜜糖吐司</h1>
-                    <p>外脆內軟，烘焙至金黃酥脆，再淋上香甜的蜜糖。 每一口都散發著濃鬱的奶香與蜂蜜的甘甜。</p>
-                    <p><a class="btn btn-danger" href="#" onclick="showFeaturettes('sandwich', event)"> Details &raquo;</a></p>
-                </div>
-                </div>
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        
+        
     
 
     <!-- Marketing messaging and featurettes
@@ -152,37 +174,52 @@
 
             <!-- Three columns of text below the carousel -->
             <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-6 d-flex flex-column align-items-center text-center">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
                     <image href="Gambar/honey_icon.jpg" width="140" height="140" />
                 </svg>
 
                 <!-- Bread -->
                 <h2>麵包</h2>
-                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                
                 <p><a class="btn btn-secondary" href="#" onclick="showFeaturettes('bread', event)"> View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+
+            <!-- Cake -->
+            <div class="col-lg-6 d-flex flex-column align-items-center text-center">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
                     <image href="Gambar/cake_icon.jpg" width="140" height="140" />
                 </svg>
 
                 <!-- Cake -->
                 <h2>蛋糕</h2>
-                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                
                 <p><a class="btn btn-secondary" href="#" onclick="showFeaturettes('cake', event)">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+
+            <!-- Honey Sandwich -->
+            <div class="col-lg-6 d-flex flex-column align-items-center text-center">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
                     <image href="Gambar/bread_icon.jpg" width="140" height="140" />            
                 </svg>
 
                 <!-- Honey Sandwich -->
                 <h2>蜜糖土司</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
                 <p><a class="btn btn-secondary" href="#" onclick="showFeaturettes('sandwich', event)">View details &raquo;</a></p>
                 
             </div><!-- /.col-lg-4 -->
+
+            <!-- Honey Sandwich -->
+            <div class="col-lg-6 d-flex flex-column align-items-center text-center">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
+                    <image href="Gambar/france_icon.jpg" width="140" height="140" />            
+                </svg>
+
+                <!-- Honey Sandwich -->
+                <h2>法式甜點</h2>
+                <p><a class="btn btn-secondary" href="#" onclick="showFeaturettes('france', event)">View details &raquo;</a></p>
+                
+            </div><!-- /.col-lg-4 -->            
             </div><!-- /.row -->
 
 
@@ -199,7 +236,7 @@
                     <h2 class="featurette-heading">珍珠香草冰淇淋蜜糖吐司<span class="text-muted"></span></h2>
                     <p class="lead">酥脆的蜜糖吐司搭配香草冰淇淋與Q彈珍珠，冰火交融的口感，帶來絕妙的甜蜜享受。</p>
                     <p class="card-text">Price: $5</p>
-                    <a href="#" data-name="Honey1" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="珍珠香草冰淇淋蜜糖吐司" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
                     </div>
                 <div class="col-md-5">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -216,7 +253,7 @@
                     <h2 class="featurette-heading">奶油香蒜吐司 <span class="text-muted"></span></h2>
                     <p class="lead"> 濃鬱的奶油與香蒜結合，烘焙至金黃酥脆，淋上香甜的蜜糖。 每一口都散發出獨特的香氣和豐富的味道。</p>
                     <p class="card-text">Price: $6</p>
-                    <a href="#" data-name="Honey2" data-price="6" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="奶油香蒜吐司" data-price="6" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
                 <div class="col-md-5 order-md-1">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -233,7 +270,7 @@
                     <h2 class="featurette-heading">藍莓香草冰淇淋蜜糖吐司 <span class="text-muted"></span></h2>
                     <p class="lead"> 金黃酥脆的蜜糖吐司配上清新的藍莓與香草冰淇淋，果香與奶香完美融合，口感層次豐富。</p>
                     <p class="card-text">Price: $7</p>
-                    <a href="#" data-name="Honey3" data-price="7" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="藍莓香草冰淇淋蜜糖吐司" data-price="7" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
                 <div class="col-md-5">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -256,7 +293,7 @@
                     <h2 class="featurette-heading">玫瑰荔枝千層 <span class="text-muted"></span></h2>
                     <p class="lead"> 玫瑰的芬芳與荔枝的清甜巧妙融合，蛋皮與奶油層次豐富，口感輕盈，帶來一場浪漫與甜美的味覺盛宴。</p>
                     <p class="card-text">Price: $10</p>
-                    <a href="#" data-name="Cake1" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="玫瑰荔枝千層" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
                 <div class="col-md-5">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -273,7 +310,7 @@
                     <h2 class="featurette-heading">阿薩姆編織千層 <span class="text-muted"></span></h2>
                     <p class="lead">精選阿薩姆紅茶，層層疊疊的蛋皮與奶油完美交織，帶來醇厚的茶香與絲滑的口感，每一口都是絕妙的味蕾享受。</p>
                     <p class="card-text">Price: $15</p>
-                    <a href="#" data-name="Cake2" data-price="15" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="阿薩姆編織千層" data-price="15" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
                 <div class="col-md-5 order-md-1">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -290,7 +327,7 @@
                     <h2 class="featurette-heading">小山園抹茶千層 <span class="text-muted"></span></h2>
                     <p class="lead">採用頂級小山園抹茶，蛋皮與抹茶奶油層層相疊，呈現出濃鬱的茶香與清新的甘甜，口感細膩，回味無窮。</p>
                     <p class="card-text">Price: $25</p>
-                    <a href="#" data-name="Cake3" data-price="25" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="小山園抹茶千層" data-price="25" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
                 <div class="col-md-5">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -313,7 +350,7 @@
                     <h2 class="featurette-heading">紅麴蔓越莓歐式麵包 <span class="text-muted"></span></h2>
                     <p class="lead">红麴和蔓越莓完美结合，带来天然的甜酸风味和健康的营养。外皮酥脆，内里松软，每一口都充满丰富的层次感。</p>
                     <p class="card-text">Price: $0.5</p>
-                    <a href="#" data-name="Bread1" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="紅麴蔓越莓歐式麵包" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
                 <div class="col-md-5">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -330,7 +367,7 @@
                     <h2 class="featurette-heading">焦糖杏仁歐式麵包 <span class="text-muted"></span></h2>
                     <p class="lead"> 焦糖的香甜與杏仁的脆香完美融合，打造出濃鬱的風味。 外脆內軟，細膩的口感與豐富的口味，讓人回味無窮。</p>
                     <p class="card-text">Price: $12</p>
-                    <a href="#" data-name="Bread2" data-price="12" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="焦糖杏仁歐式麵包" data-price="12" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
                 <div class="col-md-5 order-md-1">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -347,7 +384,7 @@
                     <h2 class="featurette-heading">全麥葡萄乾歐式麵包 <span class="text-muted"></span></h2>
                     <p class="lead"> 全麥麵粉與甜美的葡萄乾結合，帶來健康的纖維和天然的甜味。 口感豐富，外皮酥脆，內裡柔軟，是健康與美味的完美平衡。</p>
                     <p class="card-text">Price: $5</p>
-                    <a href="#" data-name="Bread3" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="全麥葡萄乾歐式麵包" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
                 <div class="col-md-5">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -358,6 +395,63 @@
                 </div>
 
             </div>
+
+            <!--France Desserts-->
+            <div id="france-features">
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="france1">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">馬卡龍 <span class="text-muted"></span></h2>
+                    <p class="lead">用色彩繽紛絢麗的法國甜點，外殼堅硬但易碎，內餡黏稠扎實，口感特別。</p>
+                    <p class="card-text">Price: $10</p>
+                    <a href="#" data-name="馬卡龍" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/france2.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="france2">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">蒙布朗 <span class="text-muted"></span></h2>
+                    <p class="lead"> 以栗子為原料製成的法式甜點，其法語名稱因甜點形狀類似「覆雪的白朗峰」而得名。</p>
+                    <p class="card-text">Price: $15</p>
+                    <a href="#" data-name="蒙布朗" data-price="15" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/france3.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" id="france3">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">千層酥<span class="text-muted"></span></h2>
+                    <p class="lead"> 由三層酥皮夾著兩層含有草莓和覆盆子的奶油和卡士達醬。</p>
+                    <p class="card-text">Price: $20</p>
+                    <a href="#" data-name="千層酥" data-price="20" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="Gambar/france4.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 
@@ -367,9 +461,16 @@
 
         <div class="container">
             <h1>關於我們</h1>
-            <p>歡迎來到我們的甜點店， 我們熱愛烘焙，希望用每一款甜點為你帶來快樂。 這裡有經典的蛋糕、豐富的千層、以及各種獨特的歐式麵包，每一口都充滿了我們的心意。 無論是和朋友分享，還是獨自享用，我們的甜點都能為你增添一份甜蜜的回憶。</p>
 
+            <p>歡迎來到我們的甜點店，</p>
+
+            <p>我們熱愛烘焙，希望用每一款甜點為你帶來快樂。</p>
+            <p> 這裡有經典的蛋糕、豐富的千層、以及各種獨特的歐式麵包，每一口都充滿了我們的心意。 無論是和朋友分享，還是獨自享用，我們的甜點都能為你增添一份甜蜜的回憶。</p>
+            <p>另外，我們一直以生產出「天然、健康」的食品為使命。</p>
+            <p>我們承諾並專注透過優質食品和優良服務以提升顧客的生活水平，並制定目標以創新的食品為顧客帶來滿足的喜悅和回饋社會大眾。</p>
+            <img src="Gambar/room_about.jpg" alt="甜點圖片" />
         </div>
+
     </div>
 
           <!-- Modal -->
@@ -430,7 +531,7 @@
 
     function showFeaturettes(section, event) {
         event.preventDefault();
-        var sections = ['bread', 'cake', 'sandwich'];
+        var sections = ['bread', 'cake', 'sandwich','france'];
         sections.forEach(function(sec) {
             document.getElementById(sec + '-features').style.display = (sec === section) ? 'block' : 'none';
         });
@@ -444,6 +545,7 @@
         document.getElementById('bread-features').style.display = 'block';
         document.getElementById('cake-features').style.display = 'none';
         document.getElementById('sandwich-features').style.display = 'none';
+        document.getElementById('france-features').style.display = 'none';
     });
     </script>
 
